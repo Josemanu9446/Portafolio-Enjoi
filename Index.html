@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180"href="/Portafolio Enjoi/assets/icons/apple-touch-icon.png"/>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png"/>
+
+    <!--Animaciones css CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!--Script Formulario-->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    emailjs.init('O8xdb2-EwLUHyskPS')
+    </script>
+
+    <!--SweetAlert2 Script-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Jose Labarca | Desarrollador Web</title>
+</head>
+
+<body>
+    <!-- Barra de Navegación -->
+    <header>
+    <nav>
+        <img src="/assets/icons/android-chrome-192x192.png" alt="jm-icon">
+        <h1>Jose Labarca</h1>
+        <ul class="navegacion">
+            <li><a href="#sobremi" class="nav-link">Acerca de Mi</a></li>
+            <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+            <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <button class="menu-hamburguesa" id="menu-hamburguesa">
+            <ion-icon class="barras" name="menu-outline"></ion-icon>
+        </button>
+    </nav>
+    </header>
+
+    <!-- Sección Sobre mi  -->
+    <section class="sobre-mi" id="sobremi">
+          <img 
+            src="/assets/images/wfh_1.svg" 
+            alt="hero-img"
+            loading="lazy"
+            class="hero-img"
+          />
+          <div class="bio animate_animated animate_shakeX">
+            <h2 class="bio-titulo">Sobre Mí</h2>
+            <p class="bio-texto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ab perspiciatis, reiciendis tempora similique sit a quos alias, numquam aliquam quaerat ut voluptatum sed id minus consequatur voluptate, aut deleniti?              Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ab perspiciatis, reiciendis tempora similique sit a quos alias, numquam aliquam quaerat ut voluptatum sed id minus consequatur voluptate, aut deleniti?
+
+            </p>
+          </div>
+    </section>
+
+    <!-- Sección Habilidades -->
+    <section class="habilidades" id="habilidades">
+      <h2 class="encabezado-habilidad">Mis habilidades</h2>
+
+      <div class="contenedor-habilidad">
+        <div class="habilidades-card">
+          <div class="first-set animate__animated animate__pulse">
+            <img
+              src="assets/icons/icons8-html-5.svg"
+              alt="html icon"
+              loading="lazy"
+              class="habilidades-icono"
+            />
+            <img
+              src="assets/icons/icons8-css3.svg"
+              alt="css icon"
+              loading="lazy"
+              class="habilidades-icono"
+            />
+            <img
+              src="assets/icons/icons8-javascript.svg"
+              alt="javascript icon"
+              loading="lazy"
+              class="habilidades-icono"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section class="proyectos" id="proyectos">
+      <h2 class="encabezado-proyecto">Algunos de mis proyectos recientes</h2>
+
+      <div class="contenedor-de-proyectos animate__animated animate__pulse">
+        <!-- Proyecto 1 -->
+        <div class="tarjeta-de-proyecto">
+          <img
+            src="assets/images/formulario.png"
+            alt="rastreador-de-gastos"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="titulo-de-proyecto">Formulario</h3>
+          <a href="#" target="_blank" class="enlace-de-proyecto">Check it Out</a>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div class="tarjeta-de-proyecto">
+          <img
+            src="assets/images/netflixClone.png"
+            alt="netflic-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="titulo-de-proyecto">Netflix Clone</h3>
+          <a href="#" target="_blank" class="enlace-de-proyecto">Check it Out</a>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div class="tarjeta-de-proyecto">
+          <img
+            src="assets/images/CovidTracker.png"
+            alt="calculadora"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="titulo-de-proyecto">Covid Tracker</h3>
+          <a href="#" target="_blank" class="enlace-de-proyecto">Echale un vistazo!</a>
+        </div>
+
+        <!-- Proyecto 4 -->
+        <div class="tarjeta-de-proyecto">
+          <img
+            src="assets/images/calculadora.png"
+            alt="calculadora"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="titulo-de-proyecto">Calculadora de Impuestos</h3>
+          <a href="#" target="_blank" class="enlace-de-proyecto">Echale un vistazo!</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seccion Contacto-->
+    <section class="contacto" id="contacto">
+      <h2>Contactame</h2>
+      <div class="formulario-contacto-contenedor">
+
+        <div class="formulario-contacto">
+          <form id="frm-email">
+            <div class="control-formulario">
+              <label for="username">Nombre</label>
+              <input
+                type="text"
+                id="username"
+                name="sender-name"
+                placeholder="Escribe tu nombre"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="control-formulario">
+              <label for="email">Correo Electrónico</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Ingresa tu correo electrónico"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="control-formulario">
+              <label for="message">Mensaje</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Escribe tu mensaje"
+                name="mensaje"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Enviar"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sección de redes sociales - Fijado a la derecha -->
+    <div class="sociales">
+      <a href="https://wa.link/lwj5hw" target="_blank"
+        ><img
+          src="assets/icons/icons8-whatsapp.gif"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img          
+          src="assets/icons/icons8-facebook.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://linkedin.com/in/jose-manuel-labarca-133613191/" target="_blank"
+        ><img
+          src="assets/icons/icons8-linkedin-circled.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/Josemanu9446" target="_blank"
+        ><img
+          src="assets/icons/icons8-github.gif"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+    </div>
+
+    <!-- Boton hacia arriba -->
+    <i class="ir-hacia-arriba" id="ir-hacia-arriba  "
+      ><img
+        src="assets/icons/icons8-double-up.gif"
+        alt="ir-hacia-arriba"
+    /></i>
+
+    <!-- Sección Footer  -->
+    <footer >
+      <p class="copy">@ 2023 José Labarca - Web Developer - Todos los derechos reservados
+      </p>
+    </footer>
+
+    <!--Website Scripts-->
+    <script src="/assets/js/app.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script type="module" 
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+    </script>
+    <script 
+        nomodule 
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js">
+    </script>
+</body>
+</html>
